@@ -11,7 +11,7 @@ module.exports = {
         "mapLink": "https://www.google.com/maps/search/?api=1&query=10+Pine+Avenue%2C+Burlington%2C+MA+01803&query_place_id=ChIJ3Xa1q0N144kR7tyJiTMRiu8"
     },
     "socials": {
-        "linkedin": "https://www.linkedin.com/company/aav-gtx-consultation/",
+        "linkedin": "https://www.linkedin.com/company/aav-gtx-consultation",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     //! https://www.google.com/maps/search/?api=1&query=10+Pine+Avenue%2C+Burlington%2C+MA+01803&query_place_id=ChIJ3Xa1q0N144kR7tyJiTMRiu8
