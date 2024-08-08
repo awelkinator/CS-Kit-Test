@@ -1,6 +1,6 @@
 module.exports = {
     "name": "AAV GTx Consultation",
-    "email": "adrianmtimmers@gmail.com",
+    "email": "aavgtxconsultation@gmail.com",
     "phoneForTel": "817-676-6447",
     "phoneFormatted": "(817) 676-6447",
     "address": {
