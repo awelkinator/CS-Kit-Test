@@ -1,40 +1,16 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function enableDarkMode() {
 	document.body.classList.add('dark-mode');
 	localStorage.setItem('theme', 'dark');
 }
-function disableDarkMode() {
+
+
+function disableDarkMode() 
+{
 	document.body.classList.remove('dark-mode');
 	localStorage.setItem('theme', 'light');
 }
-function detectColorScheme() {
+function detectColorScheme() 
+{
 	let theme = 'light';
 	if (localStorage.getItem('theme')) {
 		theme = localStorage.getItem('theme');
