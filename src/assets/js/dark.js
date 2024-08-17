@@ -5,19 +5,8 @@
 // helper functions to toggle dark mode
 function enableDarkMode() {document.body.classList.add('dark-mode');localStorage.setItem('theme', 'dark');}
 function disableDarkMode() {document.body.classList.remove('dark-mode');localStorage.setItem('theme', 'light');}
-// determines a new users dark mode preferences
-function detectColorScheme() {let theme = 'light';
-	// check localStorage for a saved 'theme' variable. if it's there, the user has visited before, so apply the necessary theme choices
-	if (localStorage.getItem('theme')) {
-		theme = localStorage.getItem('theme');
-	}
-	// if it's not there, check to see if the user has applied dark mode preferences themselves in the browser
-	else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		theme = 'dark';
-	}
-	// if there is no preference set, the default of light will be used. apply accordingly
-	theme === 'dark' ? enableDarkMode() : disableDarkMode();
-}
+
+function detectColorScheme() {let theme = 'light';if (localStorage.getItem('theme')) {theme = localStorage.getItem('theme');} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {theme = 'dark';}theme === 'dark' ? enableDarkMode() : disableDarkMode();}
 // run on page load
 detectColorScheme();
 // add event listener to the dark mode button toggle
